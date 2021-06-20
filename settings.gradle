@@ -1,0 +1,2 @@
+rootProject.name = "Thenix Elites"
+include ':app'

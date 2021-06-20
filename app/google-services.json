@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "674308474187",
+    "project_id": "thenix-a2747",
+    "storage_bucket": "thenix-a2747.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674308474187:android:001dc99da28653808e14ce",
+        "android_client_info": {
+          "package_name": "com.example.thenixelites"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674308474187-kv36r91f5n7q7o9nfj1ae6n63ep2lu9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpY0_CrnWizrY7lppyMFIDooUaAFXtf3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674308474187-kv36r91f5n7q7o9nfj1ae6n63ep2lu9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
