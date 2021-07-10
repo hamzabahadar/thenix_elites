@@ -21,8 +21,7 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_home);
 
 
@@ -43,6 +42,12 @@ public class Home extends AppCompatActivity {
                     FirebaseAuth.getInstance().signOut();
                     startActivity(new Intent(Home.this, MainActivity.class));
                 }
+//                else if(item.getItemId() == R.id.bmrCalculator){
+//                    startActivity(new Intent(Home.this, BMR.class));
+//                }
+//                else if(item.getItemId() == R.id.bmiCalculator){
+//                    startActivity(new Intent(Home.this, BMI.class));
+//                }
                 return true;
             }
         });
@@ -51,5 +56,20 @@ public class Home extends AppCompatActivity {
 
     public void fullBody(View view) {
         startActivity(new Intent(Home.this, FullBody.class));
+    }
+
+    public void skills_page(View view) {startActivity(new Intent(Home.this, Skills.class));
+    }
+
+    public void lowerbody(View view) {startActivity(new Intent(Home.this, LowerBody.class));
+    }
+
+    public void upperbody(View view) { startActivity(new Intent(Home.this, UpperBody.class));
+    }
+
+    public void bmi(View view) { startActivity(new Intent(Home.this, BMI.class));
+    }
+
+    public void bmr(View view) {startActivity(new Intent(Home.this, BMR.class));
     }
 }

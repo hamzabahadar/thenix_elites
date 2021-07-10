@@ -9,6 +9,9 @@ public class LowerBody_Beginner extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
         setContentView(R.layout.activity_lower_body_beginner);
     }
 }

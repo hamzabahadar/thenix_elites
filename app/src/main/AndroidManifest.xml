@@ -6,18 +6,76 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.ThenixElites">
-        <activity android:name=".FullBody"></activity>
-        <activity android:name=".Home" />
-        <activity android:name=".SignUp" />
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".splash"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity android:name=".ForgotPassword" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Planche" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MuscleUp" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LSit" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".HumanFlag" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BackLever" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FrontLever" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Handstand" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BMI" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BMR" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LowerBody_Advanced" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LowerBody_Intermediate" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LowerBody_Beginner" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".UpperBody_Advanced" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".UpperBody_Intermediate" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".UpperBody_Beginner" android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".FullBody_Advanced" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FullBody_Intermediate" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FullBody_Beginner" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Skills" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LowerBody" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".UpperBody" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FullBody" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Home"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".SignUp" android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

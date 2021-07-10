@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+
         super.onCreate(savedInstanceState);
 
         mAuth = FirebaseAuth.getInstance();
@@ -31,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, Home.class));
             finish();
         }
+
 
         setContentView(R.layout.activity_main);
 
@@ -106,5 +110,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    public void forgot(View view) {startActivity(new Intent(MainActivity.this, ForgotPassword.class));
     }
 }

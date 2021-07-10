@@ -6,4 +6,133 @@
     android:layout_height="match_parent"
     tools:context=".BMR">
 
+    <TextView
+        android:id="@+id/tv_bmr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-black"
+        android:text="BMR Calculator"
+        android:textColor="#2B2828"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_age"
+        android:layout_width="268dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Age                                        Years"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bmr" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="277dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_age">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+
+            android:textColor="#2B2828"
+
+            android:text="Gender"
+
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="Male   "
+
+
+            />
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:text="Female  " />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/bmi_height"
+        android:layout_width="272dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Height                                        cm"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/bmi_weight"
+        android:layout_width="273dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Weight                                        kg"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmi_height" />
+
+    <Button
+        android:id="@+id/bmi_calculate"
+        android:layout_width="204dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:text="Calculate"
+        android:onClick="calculateBtn"
+        android:backgroundTint="#2B2828"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmi_weight" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+
+        android:text="Note: These caloric needs are based on person doing exercises 3-5 days/week"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/bmi_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmi_calculate" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
